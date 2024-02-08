@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital@1&display=swap');
+
+.body {
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.body .heading {
+  width: 100%;
+}
+
+.left {
+  width: 50%;
+  font-family: 'Lobster', cursive;
+  color: snow;
+
+}
+
+.right {
+  height: 100%;
+  width: 30%;
+}
+
+.body .heading h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.body .heading span {
+  color: #F7B500;
+}
+
+.body .heading p {
+  font-size: 20px;
+}
+
+.body .heading .button-login {
+  margin: 25px 45px;
+}
+
+.content {
+  height: auto;
+  width: 330px;
+  padding: 40px 30px;
+  background: #dde1e7;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px 3px rgba(1, 1, 12, 0.254),
+    -2px -2px 4px 2px rgba(2, 11, 11, 0.065);
+}
+
+.content .text {
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #595959;
+  text-align: center;
+}
+
+.field {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+
+}
+
+
+
+.field input {
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: #dde1e7;
+  color: #595959;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #BABECC,
+    inset -5px -5px 10px #ffffff73;
+}
+
+.field input::placeholder {
+  color: #595959;
+}
+
+.field input:focus {
+  box-shadow: inset 1px 1px 2px #BABECC,
+    inset -1px -1px 2px #ffffff73;
+}
+
+.field span {
+  position: absolute;
+  color: #595959;
+  width: 50px;
+  line-height: 50px;
+  margin-left: 15px;
+}
+
+.field label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+  pointer-events: none;
+  color: #666666;
+}
+
+.field input:valid~label {
+  opacity: 0;
+}
+
+.forgot-pass {
+  text-align: left;
+  margin: 10px 0 10px 5px;
+}
+
+.forgot-pass a {
+  font-size: 16px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.forgot-pass:hover a {
+  text-decoration: underline;
+}
+
+.button button {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  margin: 0px 50px;
+  padding: 0px 45px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 600;
+  background: #dde1e7;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #595959;
+  box-shadow: 3px 3px 5px #BABECC,
+    -5px -5px 10px #ffffff73;
+}
+
+.button button:focus {
+  color: #3498db;
+  box-shadow: inset 2px 2px 5px #BABECC,
+    inset -5px -5px 10px #ffffff73;
+}
+
+.sign-up {
+  margin: 10px 0;
+  color: #595959;
+  font-size: 16px;
+}
+
+.sign-up a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+}
+
+.toggle-icon {
+  display: none;
+  font-size: 25px;
+  color: snow;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .toggle-icon {
+    display: block;
+    position: relative;
+    top: 0px;
+    right: 20px;
+  }
+
+  .navbar .nav-item {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #1681F5;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .navbar .nav-item.active {
+    display: flex;
+  }
+
+  .navbar .nav-item a {
+    margin: 10px 0;
+  }
+
+  .left {
+    width: 100%;
+    padding: 0px 10px;
+
+  }
+
+  .body .heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .right {
+    height: 75%;
+  }
+}
