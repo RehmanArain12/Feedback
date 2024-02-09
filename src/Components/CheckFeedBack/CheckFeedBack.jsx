@@ -58,7 +58,7 @@ const CheckFeedBack = () => {
         <div className={`nav-item ${showMenu ? "active" : ""}`}>
           <Link to="/" onClick={toggleMenu}>Home</Link>
           <Link to="/CheckFeedBack" onClick={toggleMenu}>Check</Link>
-          <Link to="/Form" onClick={toggleMenu}>AdminPenal</Link>
+          <Link to="/Form" onClick={toggleMenu}>Admin Panel</Link>
         </div>
       </div>
       <div className="container">
