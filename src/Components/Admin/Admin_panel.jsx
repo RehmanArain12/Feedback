@@ -51,7 +51,7 @@ const Admin_panel = () => {
         <div className={`nav-item ${showMenu ? "active" : ""}`}>
         <Link to="/Admin_panel">Home</Link>
           <Link to="/Admin_panel">Check</Link>
-          <Link to="/Admin_panel">AdminPenal</Link>
+          <Link to="/Admin_panel">Admin Panel</Link>
           <Link to="/" onClick={handleLogout}>Logout</Link>
         </div>
       </div>
