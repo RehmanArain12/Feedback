@@ -65,7 +65,7 @@ const Form = () => {
             Check
           </Link>
           <Link to="/Form" onClick={toggleMenu}>
-            AdminPenal
+            Admin Panel
           </Link>
         </div>
       </div>
