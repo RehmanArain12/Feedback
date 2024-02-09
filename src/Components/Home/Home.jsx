@@ -79,7 +79,7 @@ const Home = () => {
             Check
           </Link>
           <Link to="/Form" onClick={toggleMenu}>
-            AdminPenal
+            Admin Panel
           </Link>
         </div>
       </div>
